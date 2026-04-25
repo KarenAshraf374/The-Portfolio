@@ -1,0 +1,515 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root{
+    --mainColor:rgb(2, 26, 84);
+    --secondColor:rgb(255, 133, 187);
+    --hoverColor:rgb(255, 206, 227);
+    --whiteColor:white;
+}
+/* nav */
+nav{
+    background-color: var(--mainColor);
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 16% !important;
+}
+nav h1{
+    color: var(--secondColor);
+
+}
+nav ul{
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+nav ul li a{
+    text-decoration: none;
+    color: var(--whiteColor) !important;
+    font-size: 25px;
+
+}
+@media screen  and (max-width:991px){
+nav ul{
+    width: 100%;
+    justify-content:flex-start;
+    align-items: flex-start;
+}
+
+}
+@media screen and (min-width:992px) and (max-width:1629px){
+    nav{
+    padding: 20px 8% !important;
+}
+nav ul{
+    width: 80%;
+}
+nav ul li a{
+    font-size: 23px;
+
+}
+}
+/* header */
+.header{
+    width: 100%;
+    height: 100vh;
+    background-color: var(--mainColor);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header .text h4{
+    margin-bottom: 5%;
+    color: var(--whiteColor);
+
+}
+.header .text p{
+    margin-bottom: 5%;
+    font-size: 40px;
+    font-weight: bold;
+    color: var(--secondColor);
+
+}
+.header .text #cv{
+    margin-top: 5%;
+    text-decoration: none;
+    background-color: var(--secondColor);
+    color: var(--mainColor);
+    padding: 15px 20px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 30px;
+    display: inline-block;
+    transition: all 2s;
+    
+}
+.header .text #cv:hover{
+    scale: 1.2;
+    background-color: var(--whiteColor);
+    color: var(--mainColor);
+}
+.header .text .icons{
+    margin-top: 8%;
+}
+.header .text .icons a i{
+    font-size: 40px;
+    color: var(--whiteColor);
+    transition: all 2s;
+}
+.header .text .icons a i:hover{
+    color: var(--secondColor);
+    scale: 1.1;
+}
+
+.header .imgg{
+    width: 300px;
+    height: 400px;
+    box-shadow: 4px 4px 4px 4px var(--hoverColor) , -4px -4px 4px 4px var(--hoverColor);
+    border-radius: 20px;
+    transition: all 2s;
+
+}
+.header .imgg img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+
+}
+.header .imgg:hover{
+    scale: 1.2;
+}
+@media screen and (max-width:924px) {
+    .header{
+    height: fit-content;
+    padding-top: 30%;
+    padding-bottom: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.header .text{
+    text-align: center;
+}
+.header .imgg{
+        margin-top: 10%;
+
+}
+}
+@media screen and (max-width:530px) {
+
+
+.header .text p{
+    font-size: 25px;
+
+}
+.header .text #cv{
+    padding: 10px 15px;
+    font-size: 20px;
+    
+}
+.header .imgg{
+    width: 200px;
+    height: 300px;
+}
+}
+
+/* about */
+
+.about-me{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 8% 0;
+    height: 80vh;
+
+}
+.about-me h1{
+    color: var(--mainColor);
+    font-size: 70px;
+    transition: 0.7s ease;
+
+}
+.about-me h1:hover
+{
+    color: var(--secondColor);
+    transform: scale(1.1);
+
+}
+.about-me .text{
+    background-color:var(--hoverColor);
+    color: var(--mainColor);
+    width: 70%;
+    padding: 40px 100px;
+    font-size: x-large;
+    border-radius: 40px 0px;
+    line-height: 50px;
+    text-transform: capitalize;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+/* skills */
+.skills{
+    background-color: var(--mainColor);
+    padding:6% 4% ;
+    font-size:70px;
+}
+.skills #skills-head{
+    text-align: center;
+    color: var(--secondColor);
+    font-size:1em ;
+    margin-bottom: 4%;
+}
+.skills .skill{
+    width: 100%;
+}
+.skills .skill p{
+    font-size: 40px;
+    color: var(--whiteColor);
+}
+.skills .skill .bg{
+    background-color: black;
+    width:80% ;
+    border-radius: 20px;
+}
+.skills .skill .fg1{
+    background-color: rgb(229, 171, 11);
+    width: 90%;
+    border-radius: 20px;
+}
+.skills .skill .fg2{
+    background-color: rgb(11, 185, 205);
+    width: 85%;
+    border-radius: 20px;
+}.skills .skill .fg3{
+    background-color: rgb(238, 18, 128);
+    width: 80%;
+    border-radius: 20px;
+}.skills .skill .fg4{
+    background-color: rgb(167, 143, 230);
+    width: 75%;
+    border-radius: 20px;
+}
+.skills .skill .bg p{
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    color: var(--whiteColor);
+}
+
+/* projects */
+.projects-contianter{
+    padding: 6%;
+}
+.projects-contianter h2{
+    text-align: center;
+    font-size: 70px;
+    color: var(--mainColor);
+    margin-bottom: 5%;
+}
+.projects-contianter .projects{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 40px;
+
+}
+.projects-contianter .projects .project{
+    width: 400px;
+    height: 500px;
+    border-radius: 20px 50px;
+    background-color: var(--secondColor);
+    /* margin-bottom: 30px; */
+}
+.projects-contianter .projects .project img{
+    width: 100%;
+    /* height: 60%; */
+    border-radius: 20px 50px 0 0;
+
+}
+.projects-contianter .projects .project .text {
+    padding: 20px;
+
+
+}
+
+.projects-contianter .projects .project .text p{
+    margin: 20px 0;
+}
+.projects-contianter .projects .project .text a{
+    text-decoration: none;
+    background-color: var(--mainColor);
+    color: var(--whiteColor);
+    padding: 15px 20px ;
+    font-size: 23px;
+    font-weight: bold;
+    border-radius: 20px;
+    display:inline-block;
+    margin-top: 20px;
+}
+
+
+@media screen  and (max-width:520px){
+    .projects-contianter h2{
+    font-size: 40px;
+    margin-bottom: 10%;
+}
+
+.projects-contianter .projects .project{
+    width: 300px;
+    height: fit-content;
+}
+
+.projects-contianter .projects .project .text a{
+    padding: 10px 15px ;
+    font-size: 18px;
+    margin-top: 15px;
+}
+}
+
+/* -------------------------------------------------------------------------------------- */
+/* Extra Hover at project section */
+/* Add these to your existing CSS */
+
+.projects-contianter .projects .project {
+    overflow: hidden; /* Necessary for border-radius + image effects */
+    transition: box-shadow 0.3s ease;
+}
+
+.projects-contianter .projects .project:hover {
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.projects-contianter .projects .project img {
+    display: block;
+    transition: transform 0.5s ease, filter 0.5s ease;
+}
+
+/* Specifically triggers when hovering the "View Project" link */
+.projects-contianter .projects .project:has(.text a:hover) img {
+    transform: scale(1.1);
+    filter: saturate(1.2);
+}
+
+/* Optional: Make the button react too */
+.projects-contianter .projects .project .text a:hover {
+    background-color: var(--secondColor);
+    color: var(--mainColor);
+    outline: 2px solid var(--mainColor);
+}
+/* --------------------------------------------------------------------------------- */
+
+/* contact */
+.contact-me {
+    padding: 8% 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--whiteColor); /* Or var(--hoverColor) if you want a contrast */
+}
+
+.contact-me h2 {
+    color: var(--mainColor);
+    font-size: 70px;
+    margin-bottom: 5%;
+    transition: 0.5s ease;
+}
+
+.contact-me h2:hover {
+    color: var(--secondColor);
+    transform: scale(1.1);
+}
+
+.contact-wrapper {
+    width: 60%;
+    background-color: var(--mainColor);
+    padding: 50px;
+    border-radius: 50px 20px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.contact-wrapper form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact-wrapper .input-group {
+    display: flex;
+    gap: 20px;
+}
+
+.contact-wrapper input, 
+.contact-wrapper textarea {
+    width: 100%;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 15px;
+    font-size: 18px;
+    outline: none;
+    background-color: var(--whiteColor);
+}
+
+.contact-wrapper button {
+    width: fit-content;
+    padding: 15px 40px;
+    font-size: 22px;
+    font-weight: bold;
+    color: var(--mainColor);
+    background-color: var(--secondColor);
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    align-self: center;
+}
+
+.contact-wrapper button:hover {
+    background-color: var(--whiteColor);
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(255, 133, 187, 0.4);
+}
+
+/* Responsive Contact */
+@media screen and (max-width: 768px) {
+    .contact-me h2 {
+        font-size: 45px;
+    }
+    .contact-wrapper {
+        width: 90%;
+        padding: 30px;
+    }
+    .contact-wrapper .input-group {
+        flex-direction: column;
+    }
+}
+/* --------------------------------------------------------------------------------- */
+
+/* footer */
+/* footer */
+.footer {
+    background-color: var(--mainColor);
+    padding: 50px 0;
+    color: var(--whiteColor);
+    text-align: center;
+    border-top: 2px solid var(--secondColor);
+    position: relative;
+}
+
+.footer-content .footer-logo {
+    font-size: 35px;
+    font-weight: bold;
+    color: var(--secondColor);
+    margin-bottom: 10px;
+}
+
+.footer-content .footer-text {
+    font-size: 18px;
+    margin-bottom: 25px;
+    opacity: 0.8;
+}
+
+.footer-icons {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.footer-icons a i {
+    font-size: 30px;
+    color: var(--whiteColor);
+    transition: 0.4s ease;
+}
+
+.footer-icons a i:hover {
+    color: var(--secondColor);
+    transform: translateY(-5px);
+}
+
+/* Responsive Footer */
+@media screen and (max-width: 530px) {
+    .footer-content .footer-text {
+        font-size: 14px;
+        padding: 0 20px;
+    }
+}
+/* --------------------------------------------------------------------------------- */
+/* media quary at about section on the screen */
+@media screen and (max-width: 768px) {
+    .about-me {
+        height: auto;
+        margin: 15% 0;
+        padding: 0 5%;
+    }
+
+    .about-me h1 {
+        font-size: 45px;
+        margin-bottom: 20px;
+    }
+
+    .about-me .text {
+        width: 90%;
+        padding: 30px 20px;
+        font-size: 18px;
+        line-height: 1.6;
+        border-radius: 30px 0px;
+        text-align: center;
+
+    }
+}
+
+@media screen and (max-width: 991px) {
+    nav {
+        padding: 10px 5% !important;
+    }
+}
+
